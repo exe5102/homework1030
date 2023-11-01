@@ -1,11 +1,15 @@
 quantity = int(input("請輸入星星數量:"))
 j = -1
-for i in range(round(quantity/2), 0, -1): #只做上三角
+
+# 只做上三角
+for i in range(round(quantity/2), 0, -1):
     j += 2
-    print(" "* i + "*"* j)
+    print(" " * i + "*" * j)
 
-print("*" * quantity)                     #分界線
+# 分界線
+print("*" * quantity)
 
-for i in range(1, round(quantity/2)+1, 1): #只做下三角
-    print(" "* i + "*"* j)
+# 只做下三角
+for i in range(1, round(quantity/2)+1, 1):
+    print(" " * i + "*" * j)
     j -= 2
